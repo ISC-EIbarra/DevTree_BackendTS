@@ -1,0 +1,14 @@
+{
+  "name": "devtree_backendts",
+  "version": "1.0.0",
+  "description": "DevTree Express and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edson Ibarra @ISC-EIbarra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
