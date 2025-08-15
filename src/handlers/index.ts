@@ -53,3 +53,7 @@ export const loginUser = async (req: Request, res: Response) => {
   const token = generateJWT({ id: user._id });
   res.send(token);
 };
+
+export const getUser = async (req: Request, res: Response) => {
+  res.json(req.user);
+};
