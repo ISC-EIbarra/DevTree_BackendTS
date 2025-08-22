@@ -63,7 +63,7 @@ export const getUser = async (req: Request, res: Response) => {
 
 export const updateProfileUser = async (req: Request, res: Response) => {
   try {
-    const { description } = req.body;
+    const { description, links } = req.body;
 
     const handle = slug(req.body.handle, '');
 
@@ -77,6 +77,7 @@ export const updateProfileUser = async (req: Request, res: Response) => {
     // Update data
     req.user.description = description;
     req.user.handle = handle;
+    req.user.links = links;
 
     await req.user.save();
     res.send('Perfil Actualizado correctamente');
